@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qq.study">
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- 连接远程service的自定义权限 服务端做权限校验 -->
+    <uses-permission android:name="view.qq.com.viewstudy.ACCESS_BOOK_SERVICE" />
+    <!-- 连接远程BookProvider的自定义权限 服务端做权限校验 -->
+    <permission
+        android:name="com.qq.aidlservice.BookProvider"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.qq.aidlservice.BookProvider.WRITE_BOOK"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.qq.aidlservice.BookProvider.READ_BOOK"
+        android:protectionLevel="normal" />
+
+    <uses-permission
+        android:name="com.qq.aidlservice.BookProvider.WRITE_BOOK"
+        android:protectionLevel="normal" />
+    <uses-permission
+        android:name="com.qq.aidlservice.BookProvider.READ_BOOK"
+        android:protectionLevel="normal" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

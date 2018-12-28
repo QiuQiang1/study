@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="toolBarPopMenuBack">
+        <item name="android:colorBackground">#ffffff</item>
+        <item name="android:actionOverflowMenuStyle">
+            @style/OverflowMenuStyle
+        </item>
+    </style>
+
+    <style name="OverflowMenuStyle">
+        <item name="android:overlapAnchor">true</item>
+    </style>
+</resources>

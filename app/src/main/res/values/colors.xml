@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#437cef</color>
+    <color name="colorPrimaryDark">#365ece</color>
+    <color name="colorAccent">#f7ad3d</color>
+    <color name="textColorPrimary">#ffffff</color>
+
+    <color name="temp">#ecd0ab</color>
+    <color name="waveColor">#50d8fd</color>
+    <color name="surfaceBack">#f5cccc</color>
+    <color name="alpha">#00000000</color>
+    <color name="scrollTextColor">#ed0101</color>
+    <color name="appBarBackColor">#0fbe55</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="companyUnCheckedColor">#929292</color>
+    <color name="companyTitleColor">#696969</color>
+    <color name="companyBack">#f9f9f9</color>
+    <color name="companyCheckedBackColor">#54cac3</color>
+    <color name="companyCheckedColor">#f9f9f9</color>
+    <color name="companyResetBack">#eaeaea</color>
+
+    <color name="grey">#dad8d8</color>
+    <color name="key_board_back">#dad8d8</color>
+    <color name="key_board_login">#8aa4f9</color>
+</resources>
